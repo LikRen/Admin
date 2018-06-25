@@ -155,14 +155,14 @@ body {
           padding-bottom: 22px;
           text-decoration: none;
           letter-spacing: 1.5px;
-          border-bottom: 4px solid transparent;
+          border-bottom: 5px solid transparent;
           -webkit-transition: .3s all;
           -o-transition: .3s all;
           transition: .3s all; }
           body .wrap .navBar .container .menu li a:hover {
-            border-bottom: 4px solid #fff; }
+            border-bottom: 5px solid #fff; }
         body .wrap .navBar .container .menu li .active {
-          border-bottom: 4px solid #fff; }
+          border-bottom: 5px solid #fff; }
     body .wrap .container .info {
       margin-top: 30px; }
       body .wrap .container .info i {
