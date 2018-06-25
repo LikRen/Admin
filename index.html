@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Setting -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styleSheets/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="styleSheets/all.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <main class="wrap">
+      <nav class="navBar d-flex justify-content-start">
+        <div class="container">
+          <h1 class="logo">Shoptime</h1>
+          <ul class="row menu">
+            <li>
+              <a href="#" class="active">HOME</a>
+            </li>
+            <li>
+              <a href="orders.html">ORDERS</a>
+            </li>
+            <li>
+              <a href="#">PRODUCT</a>
+            </li>
+          </ul>
+          <h2 class="ml-auto identity">Admin</h2>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="info d-flex justify-content-between">
+          <span class="overview">OVERVIEW</span>
+          <div class="date d-flex align-items-center">
+            <span>2018/6/6</span>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <span>2018/6/13</span>
+            <!-- <span>Weekly<i class="fa fa-caret-down" aria-hidden="true"></i></span> -->
+            <div class="dropdown interval">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Weekly
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Daily</a>
+                <a class="dropdown-item" href="#">Weekly</a>
+                <a class="dropdown-item" href="#">Monthly</a>
+                <a class="dropdown-item" href="#">Yearly</a>
+                <a class="dropdown-item" href="#">Custom</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="totalInfo">
+          <div class="container d-flex justify-content-between">
+            <div class="revenue">
+              <span class="title"><i class="fas fa-hand-holding-usd"></i>TOTAL REVENUE</span>
+              <span class="number green">54,540</span>
+            </div>
+            <div class="cost">
+              <span class="title"><i class="fas fa-boxes"></i>TOTAL COST</span>
+              <span class="number red">12,660</span>
+            </div>
+            <div class="income">
+              <span class="title"><i class="fas fa-money-bill"></i>NET INCOME</span>
+              <span class="number blue">41,880</span>
+            </div>
+          </div>
+        </div>
+        <div class="chart">
+          <div class="container">
+            <h2>Activity</h2>
+            <canvas id="myChart" width="900" height="400"></canvas>
+          </div>
+        </div>
+        <div class="transactionInfo">
+          <div class="container d-flex justify-content-between">
+            <div class="website">
+              <h2>Transaction Website</h2>
+              <ul class="websiteTable">
+                <li class="d-flex align-items-center justify-content-between">
+                  <i class="fab fa-facebook-square titleIcon"></i>
+                  <span class="url">Facebook.com</span>
+                  <span class="number">45,836</span>
+                  <span class="upAndDowns up"><i class="fas fa-arrow-up"></i>20%</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fab fa-google titleIcon"></i>
+                  <span class="url">google.com</span>
+                  <span class="number">23,582</span>
+                  <span class="upAndDowns up"><i class="fas fa-arrow-up"></i>12%</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-shopping-bag titleIcon"></i>
+                  <span class="url">Shopify.com</span>
+                  <span class="number">2,489</span>
+                  <span class="upAndDowns down"><i class="fas fa-arrow-down"></i>15%</span>
+                </li>
+                <li class="d-flex align-items-center lastLi">
+                  <i class="fab fa-wordpress-simple titleIcon"></i>
+                  <span class="url">Wordpress.com</span>
+                  <span class="number">1,057</span>
+                  <span class="upAndDowns down"><i class="fas fa-arrow-down"></i>30%</span>
+                </li>
+              </ul>
+            </div>
+            <div class="orders">
+              <h2 class="title">Latest Orders</h2>
+              <ul class="orderList">
+                <li class="d-flex align-items-center justify-content-start">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nP6b6axFnCV4DhzyJ4pqR6GQRrGSgtTr9mGToyPq4aOgkQmyuA" alt="">
+                  <div class="orderInfo">
+                    <h2>Vintage T-shirt</h2>
+                    <p class="orderTime"><i class="fas fa-clock"></i>2018/6/13  13:42</p>
+                    <p class="orderPeople"><i class="fas fa-male"></i>Belle Willis</p>
+                    <div class="totalMoney">
+                      <span>Total</span>
+                      <span>3,200</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center justify-content-start">
+                  <img src="http://cdn.shopify.com/s/files/1/0423/8761/products/Robyn_CO3504_web_v01_grande.jpg?v=1524524461" alt="">
+                  <div class="orderInfo">
+                    <h2>Cowboy Jacket</h2>
+                    <p class="orderTime"><i class="fas fa-clock"></i>2018/6/13  10:45</p>
+                    <p class="orderPeople"><i class="fas fa-male"></i>Adrian Cummings</p>
+                    <div class="totalMoney">
+                      <span>Total</span>
+                      <span>2,800</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center justify-content-start">
+                  <img src="https://img1.cohimg.net/is/image/Coach/23152_blk_a0?fmt=jpeg&wid=578&hei=727&bgc=240,240,240&qlt=85,0&op_sharpen=1&resMode=bicub&op_usm=0,0,0,0&iccEmbed=0&fit=vfit" alt="">
+                  <div class="orderInfo">
+                    <h2>Coach Coat</h2>
+                    <p class="orderTime"><i class="fas fa-clock"></i>2018/6/13  8:26</p>
+                    <p class="orderPeople"><i class="fas fa-male"></i>Lura Holland</p>
+                    <div class="totalMoney">
+                      <span>Total</span>
+                      <span>1,600</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="js/all.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["6 JUN", "7 JUN", "8 JUN","9 JUN","10 JUN","11 JUN","12 JUN","13 JUN"],
+              datasets: [{
+                  fill: 'false',
+                  label: 'TOTAL REVENUE',
+                  data: [7200, 7000, 5500,7200,5700,6100,7000,6800],
+                  backgroundColor: [
+                      '#7ED321',
+                  ],
+                  borderColor: [
+                      '#7ED321',
+                  ],
+                  borderWidth: 1
+              },{
+                  fill: 'false',
+                  label: 'TOTAL COST',
+                  data: [6100, 5500, 1900, 4000, 3700, 5200, 6500, 5000],
+                  backgroundColor: [
+                      '#4A90E2',
+                  ],
+                  borderColor: [
+                      '#4A90E2',
+                  ],
+                  borderWidth: 1
+              },{
+                  fill: 'false',
+                  label: 'NET INCOME',
+                  data: [900, 900, 2700, 2900, 2200, 600, 800, 2900],
+                  backgroundColor: [
+                      '#D0021B',
+                  ],
+                  borderColor: [
+                      '#D0021B',
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+            elements: {
+                line: {
+                    tension: 0, // disables bezier curves
+                }
+            }
+          }
+      });
+    </script>
+  </body>
+</html>

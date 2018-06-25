@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.checkAndEdit input {
+  margin: 32px 0 0 20px; }
+
+.checkAndEdit .editMenu .btn {
+  background-color: transparent;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 18px; }
+  .checkAndEdit .editMenu .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .checkAndEdit .editMenu .btn::after {
+    position: absolute;
+    top: 13px;
+    right: -5px;
+    border-top: .4em solid; }
+
+.checkAndEdit .editMenu .dropdown-menu {
+  min-width: 150px; }
+  .checkAndEdit .editMenu .dropdown-menu .dropdown-item {
+    position: relative;
+    padding: .25rem 2rem; }
+    .checkAndEdit .editMenu .dropdown-menu .dropdown-item input {
+      position: absolute;
+      top: 5px;
+      left: 13px; }
+
+.tableSetting table {
+  width: 100%; }
+  .tableSetting table tr:nth-child(even) {
+    background-color: #ebebeb; }
+  .tableSetting table th {
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #fff;
+    padding-left: 40px; }
+  .tableSetting table td {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 40px;
+    padding-top: 17px;
+    position: relative; }
+    .tableSetting table td input {
+      position: absolute;
+      left: 20px;
+      top: 27px; }
+    .tableSetting table td .price {
+      color: #9b9b9b; }
+    .tableSetting table td .statusBtn {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff; }
+      .tableSetting table td .statusBtn i {
+        padding-left: 5px; }
+    .tableSetting table td .green {
+      background-color: #7ED321; }
+    .tableSetting table td .orange {
+      background-color: #f5a623; }
+    .tableSetting table td .blue {
+      background-color: #4A90E2; }
+    .tableSetting table td .gray {
+      background-color: #9b9b9b; }
+    .tableSetting table td .productList:last-child {
+      margin-bottom: 17px; }
+
+.pageBtn {
+  width: 240px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 30px 0 40px 0; }
+  .pageBtn li a {
+    display: block;
+    width: 41px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    color: black;
+    border: 1px solid #ECEEEF;
+    background-color: white;
+    text-decoration: none; }
+  .pageBtn li .active {
+    background-color: black;
+    color: white; }
+
+body {
+  font-size: 16px;
+  font-family: "Helvetica","Microsoft JhengHei","PingFangTC-Regular";
+  background-color: #f2f2f2; }
+  body .container {
+    max-width: 970px; }
+  body .wrap {
+    width: 100%;
+    margin: 0 auto; }
+    body .wrap .navBar {
+      background-color: #000;
+      height: 70px; }
+      body .wrap .navBar .container .logo, body .wrap .navBar .container .identity {
+        font-size: 24px;
+        color: #fff;
+        font-weight: bold; }
+      body .wrap .navBar .container .menu {
+        margin-left: 80px; }
+        body .wrap .navBar .container .menu li a {
+          font-weight: bold;
+          color: #fff;
+          padding: 26px 20px;
+          padding-bottom: 22px;
+          text-decoration: none;
+          letter-spacing: 1.5px;
+          border-bottom: 4px solid transparent;
+          -webkit-transition: .3s all;
+          -o-transition: .3s all;
+          transition: .3s all; }
+          body .wrap .navBar .container .menu li a:hover {
+            border-bottom: 4px solid #fff; }
+        body .wrap .navBar .container .menu li .active {
+          border-bottom: 4px solid #fff; }
+    body .wrap .container .info {
+      margin-top: 30px; }
+      body .wrap .container .info i {
+        color: black;
+        padding: 0 8px;
+        padding-top: 4px; }
+      body .wrap .container .info .overview {
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+        line-height: 37px; }
+      body .wrap .container .info .date {
+        font-size: 16px;
+        color: #9b9b9b; }
+        body .wrap .container .info .date span {
+          display: inline-block;
+          padding-top: 4px; }
+        body .wrap .container .info .date .interval {
+          display: inline-block;
+          margin-left: 10px; }
+          body .wrap .container .info .date .interval .btn {
+            background-color: transparent;
+            position: relative; }
+            body .wrap .container .info .date .interval .btn:focus {
+              -webkit-box-shadow: none;
+                      box-shadow: none; }
+            body .wrap .container .info .date .interval .btn::after {
+              position: absolute;
+              top: 16px;
+              right: -8px;
+              border-top: .4em solid; }
+          body .wrap .container .info .date .interval .dropdown-menu {
+            -webkit-box-shadow: 1px 2px 10px 0 #9b9b9b;
+                    box-shadow: 1px 2px 10px 0 #9b9b9b;
+            border-radius: 2px; }
+            body .wrap .container .info .date .interval .dropdown-menu .dropdown-item {
+              padding: 8px 1.5rem;
+              text-align: center; }
+              body .wrap .container .info .date .interval .dropdown-menu .dropdown-item:hover {
+                color: white;
+                background-color: black; }
+    body .wrap .container .totalInfo {
+      margin-top: 20px; }
+      body .wrap .container .totalInfo .container {
+        padding: 0; }
+        body .wrap .container .totalInfo .container > * {
+          width: 300px;
+          height: 138px;
+          -webkit-box-shadow: 0 0 10px 5px #EBEBEB;
+                  box-shadow: 0 0 10px 5px #EBEBEB;
+          border-radius: 3px;
+          background-color: #fff;
+          text-align: center; }
+        body .wrap .container .totalInfo .container .title {
+          margin-top: 30px;
+          font-size: 16px;
+          color: #000000;
+          display: inline-block;
+          font-weight: bold; }
+        body .wrap .container .totalInfo .container .number {
+          font-size: 36px;
+          margin-top: 16px;
+          font-weight: bold;
+          display: block; }
+        body .wrap .container .totalInfo .container .green {
+          color: #7ED321; }
+        body .wrap .container .totalInfo .container .red {
+          color: #D0021B; }
+        body .wrap .container .totalInfo .container .blue {
+          color: #4A90E2; }
+        body .wrap .container .totalInfo .container i {
+          font-size: 25px;
+          margin-right: 8px; }
+    body .wrap .container .chart {
+      margin-top: 18px;
+      height: 450px;
+      width: 940px;
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 0 10px 5px #EBEBEB;
+              box-shadow: 0 0 10px 5px #EBEBEB;
+      border-radius: 3px; }
+      body .wrap .container .chart h2 {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 30px 0 0 40px; }
+      body .wrap .container .chart canvas {
+        padding-bottom: 30px; }
+    body .wrap .container .transactionInfo {
+      margin-top: 20px;
+      margin-bottom: 42px; }
+      body .wrap .container .transactionInfo .container {
+        padding: 0; }
+        body .wrap .container .transactionInfo .container > * {
+          background: #FFFFFF;
+          -webkit-box-shadow: 0 0 10px 5px #EBEBEB;
+                  box-shadow: 0 0 10px 5px #EBEBEB;
+          border-radius: 3px;
+          width: 460px;
+          height: 456px; }
+        body .wrap .container .transactionInfo .container .website {
+          font-size: 24px;
+          font-weight: bold;
+          padding: 30px 35px 0 35px; }
+          body .wrap .container .transactionInfo .container .website .websiteTable {
+            margin-top: 10px; }
+            body .wrap .container .transactionInfo .container .website .websiteTable li {
+              height: 92px;
+              border-bottom: 1px solid #ebebeb; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li:last-child {
+                border-bottom: none; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .titleIcon {
+                font-size: 52px;
+                width: 52px;
+                height: 52px; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .url {
+                font-size: 16px;
+                color: #9b9b9b;
+                padding: 0px 62px 0 20px;
+                width: 200px; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .number {
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 20px;
+                width: 62px;
+                text-align: right; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns {
+                font-size: 16px; }
+                body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns i {
+                  font-size: 18px;
+                  padding-right: 8px;
+                  height: auto;
+                  width: auto; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .up {
+                color: #7ED321; }
+              body .wrap .container .transactionInfo .container .website .websiteTable li .down {
+                color: #D0021B; }
+        body .wrap .container .transactionInfo .container .orders {
+          padding: 30px 35px 0 35px; }
+          body .wrap .container .transactionInfo .container .orders .title {
+            font-size: 24px;
+            font-weight: bolder; }
+          body .wrap .container .transactionInfo .container .orders .orderList {
+            margin-top: 30px; }
+            body .wrap .container .transactionInfo .container .orders .orderList li {
+              height: 115px;
+              width: 100%;
+              position: relative;
+              border-bottom: 1px solid #ebebeb;
+              padding: 8px 0px; }
+              body .wrap .container .transactionInfo .container .orders .orderList li:last-child {
+                border-bottom: none; }
+              body .wrap .container .transactionInfo .container .orders .orderList li img {
+                width: 100px;
+                height: 100px; }
+              body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo {
+                margin-left: 20px; }
+                body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo h2 {
+                  font-size: 20px;
+                  font-weight: bolder; }
+                body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderTime, body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderPeople {
+                  font-size: 16px;
+                  color: #9b9b9b; }
+                  body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderTime i, body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderPeople i {
+                    margin-right: 16px;
+                    width: 10px;
+                    height: 10px; }
+                body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderTime {
+                  padding: 8px 0; }
+                body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .orderPeople i {
+                  font-size: 15px;
+                  padding-left: 5px; }
+                body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .totalMoney {
+                  position: absolute;
+                  right: 0px;
+                  bottom: 20px; }
+                  body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .totalMoney span {
+                    font-size: 14px;
+                    display: block;
+                    text-align: right; }
+                    body .wrap .container .transactionInfo .container .orders .orderList li .orderInfo .totalMoney span:last-child {
+                      font-size: 20px;
+                      font-weight: bolder;
+                      margin-top: 5px; }
+
+/*# sourceMappingURL=all.css.map */

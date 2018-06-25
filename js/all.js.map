@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":["$","click","event","preventDefault"],"mappings":";;AAAAA,EAAE,GAAF,EAAOC,KAAP,CAAa,YAAK;AACdC,UAAMC,cAAN;AACH,CAFD","file":"all.js","sourcesContent":["$('a').click(() =>{\r\n    event.preventDefault();\r\n});"]}
