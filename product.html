@@ -1,0 +1,343 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Setting -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styleSheets/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <title>Shoptime</title>
+  </head>
+  <body>
+    <main class="wrap">
+      <nav class="navBar d-flex justify-content-start">
+        <div class="container">
+          <h1 class="logo">Shoptime</h1>
+          <ul class="row menu">
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="orders.html" >ORDERS</a>
+            </li>
+            <li>
+              <a href="product.html" class="active">PRODUCT</a>
+            </li>
+          </ul>
+          <h2 class="ml-auto identity">Admin</h2>
+        </div>
+      </nav>
+      <div class="checkAndEdit productSetting">
+        <div class="container d-flex justify-content-start">
+          <div class="dropdown selectStatus">
+            <input type="checkbox">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Select All</a>
+              <a class="dropdown-item" href="#">UnSelect All</a>
+              <a class="dropdown-item" href="#">Paid</a>
+              <a class="dropdown-item" href="#">Unpaid</a>
+              <a class="dropdown-item" href="#">Shopping</a>
+              <a class="dropdown-item" href="#">Done</a>
+            </div>
+          </div>
+          <div class="dropdown changeStatusBtn">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-tags" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Change Status to...</a>
+              <a class="dropdown-item" href="#">Paid</a>
+              <a class="dropdown-item" href="#">Unpaid</a>
+              <a class="dropdown-item" href="#">Shopping</a>
+              <a class="dropdown-item" href="#">Done</a>
+            </div>
+          </div>
+          <button type="button" class="btn addProduct ml-auto" data-toggle="modal" data-target="#exampleModal">
+            ADD NEW PRODUCT <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container TableSetting ProductTableSetting">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Original</th>
+              <th>Discount</th>
+              <th>Size</th>
+              <th>Color</th>
+              <th>Inventory</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox">
+                <img class="productImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nP6b6axFnCV4DhzyJ4pqR6GQRrGSgtTr9mGToyPq4aOgkQmyuA" alt="">
+                Mauris non tem.
+              </td>
+              <td>
+                <span>$3,200</span>
+              </td>
+              <td>$2,800</td>
+              <td colspan="3">
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>L</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>M</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>S</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="dropdown changeStatusBtn">
+                  <button class="btn dropdown-toggle green" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PUBLISHED<i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">PUBLISHED</a>
+                    <a class="dropdown-item" href="#">UNPUBLISHED</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+                <img class="productImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nP6b6axFnCV4DhzyJ4pqR6GQRrGSgtTr9mGToyPq4aOgkQmyuA" alt="">
+                Mauris non tem.
+              </td>
+              <td>
+                <span>$3,200</span>
+              </td>
+              <td>$2,800</td>
+              <td colspan="3">
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>L</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>M</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>S</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="dropdown changeStatusBtn">
+                  <button class="btn dropdown-toggle green" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PUBLISHED<i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">PUBLISHED</a>
+                    <a class="dropdown-item" href="#">UNPUBLISHED</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="gray">
+              <td>
+                <input type="checkbox">
+                <img class="productImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nP6b6axFnCV4DhzyJ4pqR6GQRrGSgtTr9mGToyPq4aOgkQmyuA" alt="">
+                Mauris non tem.
+              </td>
+              <td>
+                <span>$3,200</span>
+              </td>
+              <td>$2,800</td>
+              <td colspan="3">
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>L</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>M</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="Size-Color-Inventory d-flex  justify-content-between">
+                  <div class="size">
+                    <span>S</span>
+                  </div>
+                  <div class="color d-flex flex-column">
+                    <span>Gray</span>
+                    <span>Black</span>
+                  </div>
+                  <div class="inventory d-flex flex-column">
+                    <span>20</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="dropdown changeStatusBtn">
+                  <button class="btn dropdown-toggle gray" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    UNPUBLISHED<i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">PUBLISHED</a>
+                    <a class="dropdown-item" href="#">UNPUBLISHED</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog container" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ADD NEW PRODUCT</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal-body d-flex justify-content-between">
+              <div class="upLoadImg col">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <h2>Drag an image or click here to upload ...</h2>
+              </div>
+              <div class="upLoadInfo col">
+                <h2>Product Discription</h2>
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control titleInput" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Title">
+                </div>
+                <div class="input-group">
+                  <textarea class="form-control" aria-label="With textarea" placeholder="Discription"></textarea>
+                </div>                
+                <h3 class="TitleSetting">Price</h3>
+                <div class="originalAndDisCount d-flex justify-content-start">
+                  <div class="original">
+                    <span>Original</span>
+                    <input type="text">
+                  </div>
+                  <div class="discount">
+                    <span>Discount</span>
+                    <input type="text">
+                  </div>
+                </div>
+                <h3 class="TitleSetting">Specification</h3>
+                <div class="specification d-flex justify-content-start">
+                  <div class="size d-flex justify-content-start">
+                    <span>Size</span>
+                    <select name="size" id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>
+                  <div class="color">
+                    <span>Color</span>
+                    <input type="text">
+                  </div>
+                  <div class="inventory">
+                    <span>Inventory</span>
+                    <input type="text">
+                  </div>
+                </div>
+                <a href="#" class="addBtn">ADD NEW SPECIFICATION<i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="save">SAVE DRAFT</a>
+              <a href="#" class="publish">PUBLISH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>

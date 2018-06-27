@@ -44,75 +44,181 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.checkAndEdit input {
-  margin: 32px 0 0 20px; }
+.checkAndEdit .selectStatus {
+  position: relative;
+  margin-top: 18px;
+  margin-left: 21px; }
+  .checkAndEdit .selectStatus input {
+    position: absolute;
+    top: 11px; }
+  .checkAndEdit .selectStatus .fa-tags {
+    position: absolute;
+    top: 9px;
+    left: 45px; }
+  .checkAndEdit .selectStatus .btn {
+    background-color: transparent;
+    position: relative; }
+    .checkAndEdit .selectStatus .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .checkAndEdit .selectStatus .btn::after {
+      position: absolute;
+      top: 13px;
+      right: -5px;
+      border-top: .4em solid; }
+  .checkAndEdit .selectStatus .dropdown-menu {
+    top: 20px !important;
+    min-width: 120px;
+    -webkit-box-shadow: 1px 2px 10px 0 #9B9B9B;
+            box-shadow: 1px 2px 10px 0 #9B9B9B;
+    border-radius: 2px; }
+    .checkAndEdit .selectStatus .dropdown-menu .dropdown-item {
+      font-weight: normal;
+      text-align: center;
+      font-size: 16px;
+      padding: 8px 20px;
+      -webkit-transition: .3s all;
+      -o-transition: .3s all;
+      transition: .3s all; }
+      .checkAndEdit .selectStatus .dropdown-menu .dropdown-item:hover {
+        background-color: black;
+        color: white; }
 
-.checkAndEdit .editMenu .btn {
+.checkAndEdit .changeStatusBtn .btn {
   background-color: transparent;
   position: relative;
-  font-weight: bold;
-  font-size: 14px;
-  margin-top: 18px; }
-  .checkAndEdit .editMenu .btn:focus {
+  margin-top: 20px; }
+  .checkAndEdit .changeStatusBtn .btn:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
-  .checkAndEdit .editMenu .btn::after {
-    position: absolute;
-    top: 13px;
-    right: -5px;
-    border-top: .4em solid; }
+  .checkAndEdit .changeStatusBtn .btn::after {
+    display: none; }
 
-.checkAndEdit .editMenu .dropdown-menu {
-  min-width: 150px; }
-  .checkAndEdit .editMenu .dropdown-menu .dropdown-item {
+.checkAndEdit .changeStatusBtn .dropdown-menu {
+  min-width: 120px;
+  -webkit-box-shadow: 1px 2px 10px 0 #9B9B9B;
+          box-shadow: 1px 2px 10px 0 #9B9B9B;
+  border-radius: 2px; }
+  .checkAndEdit .changeStatusBtn .dropdown-menu .dropdown-item {
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 20px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all; }
+    .checkAndEdit .changeStatusBtn .dropdown-menu .dropdown-item:hover {
+      background-color: black;
+      color: white; }
+
+.checkAndEdit .editMenu {
+  position: relative; }
+  .checkAndEdit .editMenu .btn {
+    background-color: transparent;
     position: relative;
-    padding: .25rem 2rem; }
-    .checkAndEdit .editMenu .dropdown-menu .dropdown-item input {
-      position: absolute;
-      top: 5px;
-      left: 13px; }
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 18px; }
+    .checkAndEdit .editMenu .btn:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .checkAndEdit .editMenu .btn i {
+      padding-left: 5px; }
+  .checkAndEdit .editMenu .active {
+    display: block !important; }
+  .checkAndEdit .editMenu .inputList {
+    display: none;
+    background: #FFFFFF;
+    -webkit-box-shadow: 1px 2px 10px 0 #9B9B9B;
+            box-shadow: 1px 2px 10px 0 #9B9B9B;
+    border-radius: 2px;
+    position: absolute;
+    top: 53px;
+    z-index: 1000;
+    width: 150px; }
+    .checkAndEdit .editMenu .inputList .form-check {
+      padding: 16px 32px;
+      position: relative; }
+      .checkAndEdit .editMenu .inputList .form-check input {
+        position: absolute;
+        top: 12px;
+        left: 32px; }
 
 .tableSetting table {
   width: 100%; }
+  .tableSetting table .done {
+    text-decoration: line-through; }
+  .tableSetting table .gray {
+    color: #9b9b9b; }
   .tableSetting table tr:nth-child(even) {
     background-color: #ebebeb; }
-  .tableSetting table th {
+  .tableSetting table tr th {
     padding: 12px 0;
     font-weight: bold;
     font-size: 16px;
     background-color: #fff;
     padding-left: 40px; }
-  .tableSetting table td {
+  .tableSetting table tr td {
     font-size: 14px;
     line-height: 21px;
     padding-left: 40px;
     padding-top: 17px;
     position: relative; }
-    .tableSetting table td input {
+    .tableSetting table tr td input {
       position: absolute;
       left: 20px;
       top: 27px; }
-    .tableSetting table td .price {
+    .tableSetting table tr td .price {
       color: #9b9b9b; }
-    .tableSetting table td .statusBtn {
+    .tableSetting table tr td .statusBtn {
       font-size: 14px;
       font-weight: bold;
       color: #fff; }
-      .tableSetting table td .statusBtn i {
+      .tableSetting table tr td .statusBtn i {
         padding-left: 5px; }
-    .tableSetting table td .green {
+    .tableSetting table tr td .btn {
+      background-color: transparent;
+      position: relative;
+      color: white;
+      font-size: 14px;
+      font-weight: bold; }
+      .tableSetting table tr td .btn:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+      .tableSetting table tr td .btn::after {
+        display: none; }
+      .tableSetting table tr td .btn i {
+        padding-left: 5px; }
+    .tableSetting table tr td .dropdown-menu {
+      min-width: 120px;
+      -webkit-box-shadow: 1px 2px 10px 0 #9B9B9B;
+              box-shadow: 1px 2px 10px 0 #9B9B9B;
+      border-radius: 2px; }
+      .tableSetting table tr td .dropdown-menu .dropdown-item {
+        width: 160px;
+        font-weight: normal;
+        text-align: center;
+        font-size: 16px;
+        padding: 8px 20px;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
+        transition: .3s all; }
+        .tableSetting table tr td .dropdown-menu .dropdown-item:hover {
+          background-color: black;
+          color: white; }
+    .tableSetting table tr td .green {
       background-color: #7ED321; }
-    .tableSetting table td .orange {
+    .tableSetting table tr td .orange {
       background-color: #f5a623; }
-    .tableSetting table td .blue {
+    .tableSetting table tr td .blue {
       background-color: #4A90E2; }
-    .tableSetting table td .gray {
+    .tableSetting table tr td .gray {
       background-color: #9b9b9b; }
-    .tableSetting table td .productList:last-child {
+    .tableSetting table tr td .productList:last-child {
       margin-bottom: 17px; }
 
 .pageBtn {
-  width: 240px;
+  width: 323px;
   height: 40px;
   border-radius: 4px;
   margin: 30px 0 40px 0; }
@@ -129,6 +235,219 @@ table {
   .pageBtn li .active {
     background-color: black;
     color: white; }
+
+.productSetting .selectStatus {
+  margin-top: 45px; }
+
+.productSetting .changeStatusBtn .btn {
+  margin-top: 45px; }
+
+.productSetting .addProduct {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: black;
+  padding: 0px 16px;
+  height: 39px;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+  .productSetting .addProduct i {
+    padding-left: 5px; }
+
+.ProductTableSetting tbody input {
+  top: 34px !important; }
+
+.ProductTableSetting tbody .productImg {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle; }
+
+.ProductTableSetting tbody .Size-Color-Inventory {
+  padding: 8px 0px;
+  border-bottom: 1px solid white; }
+  .ProductTableSetting tbody .Size-Color-Inventory:nth-child(3) {
+    border-bottom: none; }
+  .ProductTableSetting tbody .Size-Color-Inventory * > * {
+    font-size: 14px; }
+  .ProductTableSetting tbody .Size-Color-Inventory .color {
+    padding-right: 45px; }
+  .ProductTableSetting tbody .Size-Color-Inventory .inventory {
+    padding-right: 10px; }
+
+.modal .modal-dialog {
+  top: 70px; }
+
+.modal .modal-header {
+  background-color: black; }
+  .modal .modal-header h5 {
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    padding-left: 20px; }
+  .modal .modal-header .close {
+    color: white;
+    opacity: 1; }
+
+.modal .modal-body {
+  padding: 30px; }
+  .modal .modal-body .upLoadImg {
+    width: 395px;
+    height: 115px;
+    background-color: #ebebeb;
+    text-align: center; }
+    .modal .modal-body .upLoadImg i {
+      font-size: 39px;
+      color: #757575;
+      padding: 25px 0 8px 0; }
+    .modal .modal-body .upLoadImg h2 {
+      font-size: 16px;
+      color: #757575;
+      line-height: 24px;
+      font-weight: bolder; }
+  .modal .modal-body .upLoadInfo {
+    margin-left: 30px; }
+    .modal .modal-body .upLoadInfo h2 {
+      font-size: 16px;
+      color: #373A3C;
+      font-weight: bold;
+      padding-bottom: 8px; }
+    .modal .modal-body .upLoadInfo .titleInput {
+      font-size: 16px;
+      color: #999999;
+      font-weight: normal; }
+    .modal .modal-body .upLoadInfo textarea {
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      padding: 5px;
+      height: 170px;
+      font-size: 16px;
+      color: #999999;
+      font-weight: normal; }
+      .modal .modal-body .upLoadInfo textarea::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #999999;
+        font-weight: normal; }
+      .modal .modal-body .upLoadInfo textarea:-ms-input-placeholder {
+        font-size: 16px;
+        color: #999999;
+        font-weight: normal; }
+      .modal .modal-body .upLoadInfo textarea::-ms-input-placeholder {
+        font-size: 16px;
+        color: #999999;
+        font-weight: normal; }
+      .modal .modal-body .upLoadInfo textarea::placeholder {
+        font-size: 16px;
+        color: #999999;
+        font-weight: normal; }
+    .modal .modal-body .upLoadInfo .TitleSetting {
+      padding: 20px 0 8px 0;
+      font-size: 16px;
+      font-weight: bolder; }
+    .modal .modal-body .upLoadInfo .originalAndDisCount {
+      margin-bottom: 20px; }
+      .modal .modal-body .upLoadInfo .originalAndDisCount > * {
+        position: relative; }
+        .modal .modal-body .upLoadInfo .originalAndDisCount > * span {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          display: inline-block;
+          width: 87px;
+          height: 36px;
+          background-color: #ebebeb;
+          border-radius: 4px 0 0 4px;
+          line-height: 36px;
+          text-align: center; }
+        .modal .modal-body .upLoadInfo .originalAndDisCount > * input {
+          width: 187px;
+          height: 38px;
+          border: 1px solid #CCCCCC;
+          border-radius: 4px;
+          padding-left: 95px; }
+      .modal .modal-body .upLoadInfo .originalAndDisCount .discount {
+        margin-left: 8px; }
+        .modal .modal-body .upLoadInfo .originalAndDisCount .discount span {
+          border-left: 1px solid #cccccc;
+          left: 0; }
+    .modal .modal-body .upLoadInfo .specification > * {
+      position: relative; }
+      .modal .modal-body .upLoadInfo .specification > * span {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        display: inline-block;
+        width: 71px;
+        height: 36px;
+        background-color: #ebebeb;
+        border-radius: 4px 0 0 4px;
+        line-height: 36px;
+        text-align: center; }
+      .modal .modal-body .upLoadInfo .specification > * input {
+        width: 130px;
+        height: 38px;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        padding-left: 75px; }
+      .modal .modal-body .upLoadInfo .specification > * select {
+        width: 65px;
+        height: 36px;
+        border: none;
+        position: absolute;
+        left: 57px;
+        padding-left: 20px; }
+    .modal .modal-body .upLoadInfo .specification .size {
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      width: 125px; }
+      .modal .modal-body .upLoadInfo .specification .size span {
+        width: 60px;
+        left: -1px;
+        top: 0px;
+        border-left: 1px solid #cccccc; }
+    .modal .modal-body .upLoadInfo .specification .color, .modal .modal-body .upLoadInfo .specification .inventory {
+      margin-left: 8px; }
+    .modal .modal-body .upLoadInfo .specification .inventory span {
+      padding: 0 16px;
+      width: auto;
+      border-left: 1px solid #cccccc;
+      left: 0; }
+    .modal .modal-body .upLoadInfo .specification .inventory input {
+      width: 160px;
+      padding-left: 103px; }
+    .modal .modal-body .upLoadInfo .addBtn {
+      display: block;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bolder;
+      padding: 12px 0px;
+      border-radius: 4px;
+      border: 1px solid black;
+      margin-top: 8px; }
+      .modal .modal-body .upLoadInfo .addBtn i {
+        padding-left: 5px; }
+
+.modal .modal-footer {
+  border-top: none;
+  padding: 0; }
+  .modal .modal-footer > * {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; }
+  .modal .modal-footer .save {
+    color: #757575;
+    margin: 0 30px 30px 0; }
+  .modal .modal-footer .publish {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 18px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    margin: 0 45px 30px 0; }
 
 body {
   font-size: 16px;
@@ -289,12 +608,56 @@ body {
                 width: 62px;
                 text-align: right; }
               body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns {
-                font-size: 16px; }
+                font-size: 16px;
+                position: relative;
+                cursor: pointer; }
                 body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns i {
                   font-size: 18px;
                   padding-right: 8px;
                   height: auto;
                   width: auto; }
+                body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips {
+                  position: absolute;
+                  top: -105px;
+                  left: -70px;
+                  width: 190px;
+                  height: 90px;
+                  text-align: center;
+                  background-color: black;
+                  border-radius: 3px;
+                  color: white;
+                  font-weight: normal;
+                  font-size: 14px;
+                  display: none; }
+                  body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips::after {
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-left: .255em;
+                    vertical-align: .255em;
+                    content: "";
+                    border-top: .8em solid;
+                    border-right: .5em solid transparent;
+                    border-bottom: 0;
+                    border-left: .5em solid transparent;
+                    position: absolute;
+                    bottom: -10px;
+                    color: black;
+                    left: 90px; }
+                  body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips h3 {
+                    padding: 20px 0 8px 0; }
+                    body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips h3 span {
+                      color: #7ED321;
+                      font-size: 20px;
+                      font-style: normal; }
+                    body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips h3 .decrease {
+                      color: #D0021B; }
+                  body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .tips span {
+                    font-size: 14px;
+                    color: #9b9b9b;
+                    font-style: italic; }
+                body .wrap .container .transactionInfo .container .website .websiteTable li .upAndDowns .active {
+                  display: block; }
               body .wrap .container .transactionInfo .container .website .websiteTable li .up {
                 color: #7ED321; }
               body .wrap .container .transactionInfo .container .website .websiteTable li .down {
